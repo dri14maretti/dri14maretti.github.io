@@ -1,0 +1,211 @@
+html,
+body {
+	margin: 0px;
+	padding: 0px;
+	/*resetando margem e padding*/
+	/* font-size: 0; -> resetar o tamanho da fonte*/
+}
+
+body {
+	background-color: #2d2d2d;
+	font-family: "Ubuntu", sans-serif;
+	height: 800px;
+}
+
+.capa {
+	color: #dee7e7;
+}
+
+.capa span {
+	color: #2191fb;
+	display: block;
+}
+
+.navigation {
+	color: #dee7e7;
+	height: 50px;
+}
+
+.navigation li {
+	display: inline-block;
+	padding-left: 30px;
+	padding-right: 30px;
+	line-height: 50px; /*o texto é automaticamente e verticalmente alinhado no centro da linha*/
+	font-size: 18px;
+	color: #dee7e7;
+}
+
+.navigation a {
+	color: #dee7e7;
+	text-decoration: none;
+}
+
+.navigation li:hover {
+	text-decoration: underline;
+}
+
+.navigation ul {
+	margin-top: 0px;
+	list-style: none;
+	padding-left: 0;
+	text-align: right;
+	height: 50px;
+}
+
+.capa div {
+	display: inline-block; /*serve parq colocar um texto ao lado do outro*/
+	height: 650px;
+}
+
+/*Usar width como % para fazer um site mais responsivo*/
+.profile-pic {
+	vertical-align: top;
+	width: 40%;
+	text-align: center;
+}
+
+.profile-title {
+	width: 59%;
+}
+
+.profile-title h1 {
+	margin-top: 200px;
+	font-size: 58px;
+	line-height: 54px;
+}
+
+.profile-title h2 {
+	color: #dee7e7;
+}
+
+#foto-de-perfil {
+	width: 350px;
+	border-radius: 350px;
+	margin-top: 100px;
+}
+
+/*Currículo*/
+
+.main {
+	padding: 80px 180px 80px 100px;
+}
+
+#foto-de-perfil-curriculo {
+	float: left;
+	width: 220px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+.main h1 {
+	color: #dee7e7;
+	font-weight: normal;
+}
+
+.main h2 {
+	color: #dee7e7;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: normal;
+	margin-top: 40px;
+}
+
+.main h3 {
+	color: #2191fb;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+.main p {
+	font-size: 18px;
+	font-weight: 100;
+	color: #dee7e7;
+	line-height: 24px;
+	text-align: justify;
+}
+
+.navigation-caminho a {
+	color: #dee7e7;
+}
+
+.navigation-caminho {
+	list-style: none;
+	padding-left: 0;
+	color: #dee7e7;
+}
+
+.navigation-caminho li {
+	display: inline-block;
+}
+
+/*Contatos*/
+
+#social-photos img {
+	width: 50px;
+}
+
+.voltar-inicio {
+	font-size: 15px;
+	margin-top: 20px;
+	color: #b37ba4;
+}
+
+/*Portifólio*/
+
+.miniatura {
+	width: 320px;
+	height: 320px;
+	display: inline-block;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	background-size: contain;
+	overflow: hidden;
+}
+
+.miniatura h3 {
+	color: #dee7e7;
+	font-weight: 100;
+}
+
+.miniatura a {
+	text-decoration: none;
+}
+
+.black-box {
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	opacity: 0;
+	padding-top: 130px;
+}
+
+/* só funciona quando estiver com o mouse em cima do elemento */
+.black-box:hover {
+	opacity: 0.8;
+}
+
+.black-box-text {
+	text-align: center;
+}
+
+.black-box-text h1 {
+	margin-top: 0;
+	font-size: 16px;
+	color: #2191fb;
+	text-transform: uppercase;
+}
+
+.black-box-text h2 {
+	font-weight: 100;
+	text-transform: none;
+	margin-top: 0;
+}
+
+.black-box-text h3 {
+	color: #dee7e7;
+	font-weight: 100;
+}
+
+.fotos-trab {
+	width: 100%;
+}
