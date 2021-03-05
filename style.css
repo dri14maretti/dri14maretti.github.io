@@ -85,6 +85,7 @@ body {
 #foto-de-perfil {
 	width: 350px;
 	border-radius: 350px;
+	text-align: center;
 	margin-top: 100px;
 	animation-name: profile-capa;
 	animation-duration: 2s;
@@ -281,5 +282,49 @@ body {
 	100% {
 		opacity: 1;
 		transform: translate(0, 0);
+	}
+}
+
+/* Para o celular -> responsividade*/
+
+@media (max-width: 1000px) {
+	.navigation li {
+		display: none;
+	}
+
+	.navigation li.three-line-button {
+		display: inline-block;
+	}
+
+	.capa div {
+		display: block;
+		height: auto;
+	}
+
+	.profile-pic {
+		width: 100%;
+	}
+
+	#foto-de-perfil {
+		margin-top: 30px;
+		max-width: 80%;¨/* Usado para mudar o tamanho da imagem de forma dinâmica*/
+	}
+
+	.profile-title {
+		width: 100%;
+		text-align: center;
+	}
+
+	.profile-title h1 {
+		margin-top: 30px;
+		font-size: 40px;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	
+	.profile-title h2 {
+		margin-top: 20px;
+		margin-left: 20px;
+		margin-right: 20px;
 	}
 }
