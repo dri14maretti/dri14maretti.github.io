@@ -24,6 +24,8 @@ body {
 .navigation {
 	color: #dee7e7;
 	height: 50px;
+	animation-name: navegacao;
+	animation-duration: 4s;
 }
 
 .navigation li {
@@ -66,6 +68,8 @@ body {
 
 .profile-title {
 	width: 59%;
+	animation-name: profile-titulo;
+	animation-duration: 2s;
 }
 
 .profile-title h1 {
@@ -82,12 +86,16 @@ body {
 	width: 350px;
 	border-radius: 350px;
 	margin-top: 100px;
+	animation-name: profile-capa;
+	animation-duration: 2s;
 }
 
 /*Currículo*/
 
 .main {
 	padding: 80px 180px 80px 100px;
+	animation-name: conteudo-chegando;
+	animation-duration: 2s;
 }
 
 #foto-de-perfil-curriculo {
@@ -187,11 +195,13 @@ body {
 	background-color: black;
 	opacity: 0;
 	padding-top: 130px;
+	transition: 1s;
 }
 
 /* só funciona quando estiver com o mouse em cima do elemento */
 .black-box:hover {
 	opacity: 0.8;
+	transition: 1s;
 }
 
 .black-box-text {
@@ -222,4 +232,54 @@ body {
 
 .navigation li.three-line-button {
 	display: none;
+}
+
+/* 0% e 100% dependem do tempo da animação que vai acontecer */
+/* Animações de "chegada" dos elementos */
+
+@keyframes profile-capa {
+	0% {
+		opacity: 0;
+		transform: translate(0, 20px);
+	}
+	100% {
+		opacity: 1;
+		transform: translate(0, 0);
+	}
+}
+
+@keyframes profile-titulo {
+	0% {
+		opacity: 0;
+		transform: translate(0, -20px);
+	}
+	100% {
+		opacity: 1;
+		transform: translate(0, 0);
+	}
+}
+
+@keyframes navegacao {
+	0% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes conteudo-chegando {
+	0% {
+		opacity: 0;
+		transform: translate(-20px, 0);
+	}
+	100% {
+		opacity: 1;
+		transform: translate(0, 0);
+	}
 }
