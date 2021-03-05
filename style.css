@@ -307,7 +307,7 @@ body {
 
 	#foto-de-perfil {
 		margin-top: 30px;
-		max-width: 80%;¨/* Usado para mudar o tamanho da imagem de forma dinâmica*/
+		max-width: 80%; /* Usado para mudar o tamanho da imagem de forma dinâmica*/
 	}
 
 	.profile-title {
@@ -321,10 +321,37 @@ body {
 		margin-left: 20px;
 		margin-right: 20px;
 	}
-	
+
 	.profile-title h2 {
 		margin-top: 20px;
 		margin-left: 20px;
 		margin-right: 20px;
+	}
+
+	.main {
+		padding: 10px 5% 40px 5%;
+		line-height: 30px;
+	}
+
+	.main p {
+		text-align: left;
+	}
+
+	.navigation-caminho li {
+		font-size: 14px;
+	}
+
+	#foto-de-perfil-curriculo {
+		max-width: 100%;
+		float: none;
+	}
+
+	.miniatura {
+		max-width: 100%;
+		background-size: auto 100%;
+	}
+
+	.black-box {
+		opacity: 0.8;
 	}
 }
