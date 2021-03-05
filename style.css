@@ -40,8 +40,8 @@ body {
 	text-decoration: none;
 }
 
-.navigation li:hover {
-	text-decoration: underline;
+.navigation a:hover {
+	color: #2191fb;
 }
 
 .navigation ul {
@@ -124,14 +124,19 @@ body {
 	text-align: justify;
 }
 
-.navigation-caminho a {
-	color: #dee7e7;
-}
-
 .navigation-caminho {
 	list-style: none;
 	padding-left: 0;
-	color: #dee7e7;
+	color: #808080;
+}
+
+.navigation-caminho a {
+	color: #808080;
+	text-decoration: none;
+}
+
+.navigation-caminho a:hover {
+	color: #2191fb;
 }
 
 .navigation-caminho li {
@@ -142,12 +147,17 @@ body {
 
 #social-photos img {
 	width: 50px;
+	margin-right: 15px;
 }
 
 .voltar-inicio {
 	font-size: 15px;
 	margin-top: 20px;
-	color: #b37ba4;
+	color: #dee7e7;
+}
+
+.voltar-inicio:hover {
+	color: #2191fb;
 }
 
 /*Portifólio*/
@@ -208,4 +218,8 @@ body {
 
 .fotos-trab {
 	width: 100%;
+}
+
+.navigation li.three-line-button {
+	display: none;
 }
